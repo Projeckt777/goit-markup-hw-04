@@ -25,10 +25,6 @@ button{
     display: block;
 }
 
-a{
-    display:block;
-}
-
 img{
     display: block;
 }
@@ -105,8 +101,6 @@ body{
     color: #212121;
     display: flex;
     justify-content: center;
-    outline: 1px solid#757575;
-    list-style:none;
     margin-left: auto;
 }
 
@@ -155,6 +149,9 @@ body{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #757575;
 }
 
@@ -183,7 +180,6 @@ body{
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #2196F3;
 }
 
 .header-mail-link::before {
@@ -197,10 +193,29 @@ body{
     background-image: url(../images/icons/envelope.svg);
 }
 
+.header-mail{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #757575;
+}
+
 .header-icon-mail {
     fill: currentColor;
-    margin-right: 20px;
+    margin-right: 10px;
     justify-content: center;
+    font-weight: 500;
+}
+
+.header-icon-tel{
+    fill: currentColor;
+    margin-right: 10px;
+    justify-content: center;
+    font-weight: 500;
 }
 
 .header-tel:hover,
@@ -209,6 +224,14 @@ body{
 .header-mail:focus {
     color: #2196F3;
 }
+
+.header-tel:hover .header-icon-tel:hover,
+.header-tel:focus .header-icon-tel:focus,
+.header-mail:hover .header-icon-mail:hover,
+.header-mail:focus .header-icon-mail:focus {
+    fill: #2196F3;
+}
+
 /*------------Hero------------------*/
 .hero {
     max-width: 1600px;
@@ -304,8 +327,6 @@ body{
     display:block;
     content: '';
     height: 120px;
-    outline: 1px solid#F5F4FA;
-    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #F5F4FA;
@@ -438,6 +459,11 @@ body{
     fill: currentColor;
 }
 
+.members-team-link:hover, 
+.members-team-link:focus{
+    background-color: #757575;
+}
+
 .members-team-link:hover .members-team-icon,
 .members-team-link:focus .members-team-icon{
     fill: #2196F3;
@@ -469,7 +495,6 @@ body{
     background: #FFFFFF;
     width: 170px;
     height: 92px;
-    border-radius: 4px;
 }
 
 .clients-item:not(:last-child) {
@@ -494,7 +519,6 @@ body{
 
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon{
-    border: 1px solid#2196F3;
     fill: #2196F3;
 }
 
@@ -635,6 +659,15 @@ body{
     color: blue;
 }
 
+.footer-container{
+    display:flex;
+    align-items: center;
+}
+
+.logo-address{
+    margin-right: 5px ; 
+}
+
 .footer-address {
     font-style: normal;
 }
@@ -701,7 +734,7 @@ body{
 }
 
 .social-networks{
-    padding-bottom: 100px;
+   margin-left: 70px;
 }
 
 .social-networks-list{
